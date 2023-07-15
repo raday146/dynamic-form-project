@@ -34,19 +34,6 @@ export interface Validation {
 }
 
 export interface Props {
-  map(
-    arg0: ({
-      validations,
-      typeValue,
-      value,
-      ...inputProps
-    }: {
-      [x: string]: any;
-      validations: any;
-      typeValue: any;
-      value: any;
-    }) => import("react/jsx-runtime").JSX.Element
-  ): unknown;
   onSubmit: (data: any) => void;
   labelButtonSubmit?: string;
   titleForm?: string;

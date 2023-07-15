@@ -10,9 +10,10 @@ interface SignUpFormType {
 
 const signUpForm = getInputs<SignUpFormType>("register");
 const onSubmit = (data: any) => {
-  // data.preventDefault();
+  // data?.preventDefault();
   console.log(data);
 };
+
 function App() {
   const initialValuesSignUp: SignUpFormType = {
     ...signUpForm.initialValues,

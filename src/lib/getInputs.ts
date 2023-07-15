@@ -9,12 +9,12 @@ export const getInputs = <T>(section: FormSection) => {
 
   for (const field of forms[section]) {
     initialValues[field.name] = field.value;
-
     if (!field.validations) continue;
 
     const schema: Validation = field.validations;
 
     validationsFields[field.name] = schema;
+    console.log(validationsFields);
   }
 
   return {

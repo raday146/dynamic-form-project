@@ -1,15 +1,14 @@
-import { yupResolver } from "@hookform/resolvers/yup";
 import { FormProvider, useForm } from "react-hook-form";
 import { Props } from "src/utils/interface";
 import { InputProps } from "src/utils/interface";
 import GenerateInput from "./inputs/GenerateInput";
-
+import { ajvResolver } from "@hookform/resolvers/ajv";
 export const Form = ({ ...props }: Props) => {
   const {
     initialValues,
     inputs,
     onSubmit,
-    validationSchema,
+    // validationSchema,
     titleForm,
     labelButtonSubmit = "Submit",
   } = props;
